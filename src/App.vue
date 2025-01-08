@@ -491,8 +491,9 @@ export default {
       };
     });
 
+    const numFillers = 20;
     const updatedShuffledItems = _.shuffle(
-      updatedItems.concat(_.sampleSize(updatedFillers, 40))
+      updatedItems.concat(_.sampleSize(updatedFillers, numFillers))
     );
 
     // console.log(updatedShuffledItems);
